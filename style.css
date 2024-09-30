@@ -30,12 +30,31 @@ body {
   width: calc(100% - (var(--sidebar-width)));
 }
 .section1 {
-  padding: 5%;
+  padding: 3%;
+}
+h2 {
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 .section1 h2 {
-  margin: 5%;
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 form {
   font-family: "Handlee", Arial, Helvetica, sans-serif;
+}
+
+/*Css for form starts*/
+form {
+  display: flex;
+  margin-top: 5%;
+  gap: 5%;
+}
+.section2 {
+  /*padding-left: 6%;*/
+}
+div > input {
+  width: 100%;
+}
+.col2 div,
+.col1 div {
+  margin: 10px;
 }
