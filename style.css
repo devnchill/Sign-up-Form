@@ -26,8 +26,8 @@ body {
 }
 #odin-logo {
   position: absolute;
-  filter: invert(100%);
-  top: 2%;
+  /*filter: invert(100%);*/
+  top: 45%;
   left: 15%;
   object-fit: cover;
   width: 10%;
