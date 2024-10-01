@@ -27,7 +27,7 @@ body {
 #odin-logo {
   position: absolute;
   filter: invert(100%);
-  top: 45%;
+  top: 2%;
   left: 15%;
   object-fit: cover;
   width: 10%;
@@ -58,6 +58,7 @@ form {
   display: flex;
 }
 div > input {
+  padding: 5px;
   border: 1px solid #e5e7eb;
   width: 100%;
 }
@@ -89,10 +90,13 @@ input:focus {
 input:invalid {
   border: 2px solid red;
 }
+input:valid {
+  border: 2px solid green;
+}
 a {
   font-weight: bolder;
   text-decoration: none;
 }
-input:invalid::after {
+input:user-invalid::after {
   content: "Invalid Input ";
 }

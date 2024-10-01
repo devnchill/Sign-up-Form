@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="sidebar">
-      <img src="assests/img/discord.png" alt="anime" />
+      <img src="assests/img/discord.png" alt="discord" />
       <img id="odin-logo" src="assests/img/odin-lined.png" alt="odinlogo" />
     </div>
     <div class="content">
@@ -20,20 +20,26 @@
       </section>
       <section class="section2">
         <h2>Let's do this</h2>
-        <form action="">
+        <form action="direct.html">
           <div class="formcontainer">
             <div class="col1">
               <div>
                 <label for="first-name">FIRST NAME</label>
-                <input required type="text" id="first-name" />
+                <input
+                  required
+                  minlength="3"
+                  maxlength="15"
+                  type="text"
+                  id="first-name"
+                />
               </div>
               <div>
                 <label for="email">EMAIL</label>
                 <input required type="email" id="email" />
               </div>
               <div>
-                <label for="passowrd">PASSWORD</label>
-                <input required type="password" id="passowrd" />
+                <label for="password">PASSWORD</label>
+                <input required minlength="8" type="password" id="password" />
               </div>
             </div>
             <div class="col2">
@@ -46,13 +52,21 @@
                 <input required type="tel" id="phone-number" />
               </div>
               <div>
-                <label for="confirm-passowrd">COFIRM YOUR PASSWORD</label>
-                <input required type="password" id="confirm-passowrd" />
+                <label for="confirm-password">COFIRM YOUR PASSWORD</label>
+                <input
+                  required
+                  minlength="8"
+                  type="password"
+                  id="confirm-password"
+                />
               </div>
             </div>
           </div>
           <button type="submit">Create Account</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
+          <p>
+            Already have an account?
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a>
+          </p>
         </form>
       </section>
     </div>
