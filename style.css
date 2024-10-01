@@ -11,13 +11,10 @@
 body {
   display: flex;
   height: 100vh;
-  width: 100vw;
 }
 
 .sidebar {
   width: var(--sidebar-width);
-  height: 100%;
-  object-fit: cover;
 }
 .sidebar > img {
   display: block;
@@ -26,7 +23,6 @@ body {
 }
 #odin-logo {
   position: absolute;
-  /*filter: invert(100%);*/
   top: 45%;
   left: 15%;
   object-fit: cover;
@@ -41,8 +37,6 @@ h2 {
 }
 .section1 {
   padding: 5%;
-}
-.section2 {
 }
 .section2 > h2 {
   padding-left: 5%;
