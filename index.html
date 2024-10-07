@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up-Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="sidebar">
@@ -25,7 +26,7 @@
           <div class="formcontainer">
             <div class="col1">
               <div>
-                <label for="first-name">FIRST NAME</label>
+                <label for="first-name">FIRST NAME*</label>
                 <input
                   tabindex="1"
                   required
@@ -36,12 +37,14 @@
                 />
               </div>
               <div>
-                <label for="email">EMAIL</label>
+                <label for="email">EMAIL*</label>
                 <input tabindex="3" required type="email" id="email" />
               </div>
               <div>
-                <label for="password">PASSWORD</label>
+                <label for="password">PASSWORD*</label>
                 <input
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  placeholder=" at least one alphabet one number"
                   tabindex="5"
                   required
                   minlength="8"
@@ -56,12 +59,14 @@
                 <input tabindex="2" type="text" id="last-name" />
               </div>
               <div>
-                <label for="phone-number">PHONE NUMBER</label>
+                <label for="phone-number">PHONE NUMBER*</label>
                 <input required tabindex="4" type="number" id="phone-number" />
               </div>
               <div>
-                <label for="confirm-password">COFIRM YOUR PASSWORD</label>
+                <label for="confirm-password">COFIRM YOUR PASSWORD*</label>
                 <input
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  placeholder=" at least one alphabet one number"
                   tabindex="6"
                   required
                   minlength="8"
@@ -71,7 +76,7 @@
               </div>
             </div>
           </div>
-          <button type="submit">Create Account</button>
+          <button id="create-account" type="submit">Create Account</button>
           <p>
             Already have an account?
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a>
